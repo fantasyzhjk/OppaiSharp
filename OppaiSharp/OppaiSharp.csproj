@@ -1,8 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.0;net20</TargetFrameworks>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <TargetFramework>net8.0</TargetFramework>
     <Authors>HoLLy</Authors>
     <Company>HoLLy</Company>
     <PackageId>HoLLy.osu.OppaiSharp</PackageId>
@@ -13,19 +12,7 @@
     <RepositoryType>Git</RepositoryType>
     <PackageTags>osu! osu pp oppai</PackageTags>
     <PackageReleaseNotes>Updated for HD rebalance (thanks to Piotrekol!)</PackageReleaseNotes>
-    <Version>2.1</Version>
+    <Optimize>true</Optimize>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <LangVersion>7.1</LangVersion>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <LangVersion>7.1</LangVersion>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Properties\" />
-  </ItemGroup>
 
 </Project>
